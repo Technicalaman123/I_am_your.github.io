@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire</title>
+    <script>
+        function handleSubmit() {
+            var selectedOption = document.getElementById("relationship").value;
+            
+            // Display a greeting message
+            var greetingMessage = "Thanks for your answer!";
+            alert(greetingMessage);
+            
+            // Redirect to Instagram
+            window.location.href = "https://technicalaman123.github.io/Sorry2.github.io/";
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="handleSubmit(); return false;">
+        <label for="relationship"> (Question-4)
+Q: I am your </label>
+        <select id="relationship" name="relationship">
+            <option value="friend">Friend</option>
+            <option value="bestfriend">Best Friend</option>
+            <option value="tutionmate">Tution Mate</option>
+            <option value="noneoftheabove">None of the Above</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
